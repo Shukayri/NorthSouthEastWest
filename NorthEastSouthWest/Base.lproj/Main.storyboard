@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="sbD-xC-FKN">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="vLW-l2-esr">
+            <objects>
+                <viewController id="sbD-xC-FKN" customClass="ViewController" customModule="NorthEastSouthWest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ZrG-uc-LFd">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2l5-wA-e2e">
+                                <rect key="frame" x="174" y="44" width="78" height="53"/>
+                                <color key="backgroundColor" name="AccentColor"/>
+                                <color key="tintColor" systemColor="systemBackgroundColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="North"/>
+                                <connections>
+                                    <segue destination="ohY-uY-fLo" kind="presentation" identifier="north" id="NGT-Sm-Qjv"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QXK-tN-nOe">
+                                <rect key="frame" x="174" y="805" width="78" height="57"/>
+                                <color key="backgroundColor" name="AccentColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="57" id="AtX-6u-j2n"/>
+                                    <constraint firstAttribute="width" constant="78" id="oGx-nh-XOd"/>
+                                </constraints>
+                                <color key="tintColor" systemColor="systemBackgroundColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="South"/>
+                                <connections>
+                                    <segue destination="ohY-uY-fLo" kind="presentation" identifier="south" id="4dc-5M-hm0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jFv-dP-qJx">
+                                <rect key="frame" x="327" y="422" width="67" height="62"/>
+                                <color key="backgroundColor" name="AccentColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="67" id="EFp-XP-b8p"/>
+                                    <constraint firstAttribute="height" constant="62" id="aTF-NB-7Kp"/>
+                                </constraints>
+                                <color key="tintColor" systemColor="systemBackgroundColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="East"/>
+                                <connections>
+                                    <segue destination="ohY-uY-fLo" kind="presentation" identifier="east" id="qvN-1Q-Pcs"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Fa-sK-mN6">
+                                <rect key="frame" x="20" y="422" width="67" height="62"/>
+                                <color key="backgroundColor" name="AccentColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="67" id="6wf-hK-huv"/>
+                                    <constraint firstAttribute="height" constant="62" id="Oiu-9c-Xhj"/>
+                                </constraints>
+                                <color key="tintColor" systemColor="systemBackgroundColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="West"/>
+                                <connections>
+                                    <segue destination="ohY-uY-fLo" kind="presentation" identifier="west" id="ecs-hh-sFM"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ojm-f3-8Y3"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="3Fa-sK-mN6" firstAttribute="centerY" secondItem="ojm-f3-8Y3" secondAttribute="centerY" id="1ol-jW-Tkc"/>
+                            <constraint firstItem="QXK-tN-nOe" firstAttribute="centerX" secondItem="ojm-f3-8Y3" secondAttribute="centerX" id="223-Mh-pnC"/>
+                            <constraint firstItem="2l5-wA-e2e" firstAttribute="height" secondItem="ZrG-uc-LFd" secondAttribute="height" multiplier="0.0558036" constant="3" id="2FJ-XU-VIJ"/>
+                            <constraint firstItem="2l5-wA-e2e" firstAttribute="width" secondItem="ZrG-uc-LFd" secondAttribute="width" multiplier="0.161836" constant="11" id="3au-vj-Kkz"/>
+                            <constraint firstItem="3Fa-sK-mN6" firstAttribute="height" secondItem="ZrG-uc-LFd" secondAttribute="height" multiplier="0.0691964" id="B8I-gb-UUv"/>
+                            <constraint firstItem="3Fa-sK-mN6" firstAttribute="width" secondItem="ZrG-uc-LFd" secondAttribute="width" multiplier="0.161836" id="Ei6-L6-cuC"/>
+                            <constraint firstItem="QXK-tN-nOe" firstAttribute="width" secondItem="ZrG-uc-LFd" secondAttribute="width" multiplier="0.188406" id="Jx5-S7-7tR"/>
+                            <constraint firstItem="jFv-dP-qJx" firstAttribute="centerY" secondItem="ojm-f3-8Y3" secondAttribute="centerY" id="KwE-I1-XKd"/>
+                            <constraint firstItem="2l5-wA-e2e" firstAttribute="top" secondItem="ojm-f3-8Y3" secondAttribute="top" id="LEA-WA-vYo"/>
+                            <constraint firstItem="3Fa-sK-mN6" firstAttribute="leading" secondItem="ojm-f3-8Y3" secondAttribute="leading" constant="20" id="dQ4-0r-Ckr"/>
+                            <constraint firstItem="jFv-dP-qJx" firstAttribute="width" secondItem="ZrG-uc-LFd" secondAttribute="width" multiplier="0.161836" id="h7h-Kt-nkY"/>
+                            <constraint firstItem="ojm-f3-8Y3" firstAttribute="bottom" secondItem="QXK-tN-nOe" secondAttribute="bottom" id="lsa-ve-0hI"/>
+                            <constraint firstItem="ojm-f3-8Y3" firstAttribute="trailing" secondItem="jFv-dP-qJx" secondAttribute="trailing" constant="20" id="tsb-70-3aP"/>
+                            <constraint firstItem="2l5-wA-e2e" firstAttribute="centerX" secondItem="ojm-f3-8Y3" secondAttribute="centerX" constant="6" id="v1e-9t-YkQ"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ce4-75-SRD" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3163.7681159420295" y="57.589285714285708"/>
+        </scene>
+        <!--New View Controller-->
+        <scene sceneID="Alb-J2-OeF">
+            <objects>
+                <viewController id="ohY-uY-fLo" customClass="NewViewController" customModule="NorthEastSouthWest" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vgD-O9-dQ4">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="319-01-fSj">
+                                <rect key="frame" x="97" y="271" width="220" height="301"/>
+                                <color key="backgroundColor" red="0.092783505150000001" green="0.092783505150000001" blue="0.092783505150000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <connections>
+                                    <action selector="newBtn:" destination="ohY-uY-fLo" eventType="touchUpInside" id="cn8-0H-GsL"/>
+                                    <action selector="unwind:" destination="kz2-Ak-Ypl" eventType="touchUpInside" id="W1M-mS-zkV"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="iPl-oP-dEG"/>
+                        <color key="backgroundColor" systemColor="systemGray2Color"/>
+                        <constraints>
+                            <constraint firstItem="319-01-fSj" firstAttribute="leading" secondItem="iPl-oP-dEG" secondAttribute="leading" constant="97" id="HkE-zD-9WB"/>
+                            <constraint firstItem="319-01-fSj" firstAttribute="centerX" secondItem="vgD-O9-dQ4" secondAttribute="centerX" id="TNn-8t-gdb"/>
+                            <constraint firstItem="319-01-fSj" firstAttribute="top" secondItem="iPl-oP-dEG" secondAttribute="top" constant="271" id="hBw-ww-YNm"/>
+                            <constraint firstItem="319-01-fSj" firstAttribute="centerY" secondItem="vgD-O9-dQ4" secondAttribute="centerY" id="vrU-GI-7Lp"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="newBtn" destination="319-01-fSj" id="VpD-H3-LiP"/>
+                        <segue destination="kz2-Ak-Ypl" kind="unwind" identifier="goBack" unwindAction="unwind:" id="yei-TV-M3Z"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Y52-LA-dVN" sceneMemberID="firstResponder"/>
+                <exit id="kz2-Ak-Ypl" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="3961" y="92"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="ecs-hh-sFM"/>
+    </inferredMetricsTieBreakers>
+    <resources>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
